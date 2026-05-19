@@ -2,12 +2,12 @@
 # %% import
 import rivtlib.rvapi as rv
 
-# rv setpublic = false
-# a true setting flips all section headers from private to public - default private
 # rv setwidth = 80
 # sets width of text output - default 80 characters
+# rv setpublic = false
+# if true all rivt file section headings are flipped to public - default private
 # rv addtag = false
-# a true setting adds the API tag to each section number - default false
+# if true an API tag is added to each section number - default false
 
 # %% rv.I("""Summary
 rv.I("""Summary  
@@ -21,9 +21,8 @@ rv.I("""Summary
     _[U] rivt user manual, https://www.rivt.info].
 
     The file may be formatted as a text, PDF or HTML doc by changing the type
-    parameter in the PUBLISH command in the Doc-API *(rv.D)* at the end of each
-    rivt file. Published files are found in the sub-folders of the *_published*
-    folder.
+    parameter in the PUBLISH command at the end of each rivt file (Doc-API
+    *rv.D*). Published files are found in the *_published* folder.
 
     """)
 
@@ -32,7 +31,7 @@ rv.I("""Load Combinations
 
     ## Indented comments with double hashes will not appear in the doc
     ## An inline table contained in a TABLE block is written to a CSV file. 
-    _[[TABLE]]  ASCE 7-05 Load Effects (saved as csv in _stored folder)
+    _[[TABLE]]  ASCE 7-05 Load Effects
     ============= ================================================
     Equation No.    Load Combination
     ============= ================================================
@@ -126,6 +125,7 @@ rv.D("""Publish Doc
     
     [layout]
     coverlogo = src/logo1.png
+    coverlogo_size = 50
     runninglogo = src/logo2.png
     runninglabel = rivt
     subtitle =  -
@@ -136,6 +136,7 @@ rv.D("""Publish Doc
     pdf_margins = 1in, 1in, 1in, 1in 
     pdf_link_underline = true
     text_width = 80
+    clear_published = true
     _[[END]]
     
     The rivt file may be published as a text, PDF or HTML doc by changing the
@@ -143,5 +144,6 @@ rv.D("""Publish Doc
     the rivt and _rivt-public folders. Published files are found in sub-folders
     of the _published folder.
 
-    | PUBLISH | Example 1 - rivt Doc | pdf
+    | PUBLISH | Example 1 - rivt Doc | html
+
     """)

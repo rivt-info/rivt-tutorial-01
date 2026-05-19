@@ -5,7 +5,7 @@
 |
         
 .. image:: ../src/logo1.png
-   :width: 600px
+   :width: 50%
    :align: center
 
 |

@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" sizes="16x16" href="_static/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="_static/favicon-32x32.png" type="image/png">
-    <title>Example 1 - rivt Doc &#8212;  </title>
+    <title>| D.0 | Example 1 - rivt Doc &#8212;  </title>
   
   
   
@@ -268,10 +268,10 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="example-1-rivt-doc">
-<h1>Example 1 - rivt Doc<a class="headerlink" href="#example-1-rivt-doc" title="Link to this heading">#</a></h1>
+  <section id="d-0-example-1-rivt-doc">
+<h1><strong>| D.0 |</strong> Example 1 - rivt Doc<a class="headerlink" href="#d-0-example-1-rivt-doc" title="Link to this heading">#</a></h1>
 <section id="summary">
-<h2><strong>[1]  Summary</strong><a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
+<h2><strong>1.1</strong> Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
 <p>This rivt file example calculates the maximum stress and deflection in a
 simply supported, uniformly loaded beam. It also serves as an annotated
 example of a rivt doc with multiple sections that is not part of a report.</p>
@@ -279,17 +279,16 @@ example of a rivt doc with multiple sections that is not part of a report.</p>
 commands and tags. Further details are provided in the
 <a class="reference external" href="https://www.rivt.info" rel="noreferrer" target="_blank">rivt user manual</a>.</p>
 <p>The file may be formatted as a text, PDF or HTML doc by changing the type
-parameter in the PUBLISH command in the Doc-API <em>(rv.D)</em> at the end of each
-rivt file. Published files are found in the sub-folders of the <em>_published</em>
-folder.</p>
+parameter in the PUBLISH command at the end of each rivt file (Doc-API
+<em>rv.D</em>). Published files are found in the <em>_published</em> folder.</p>
 </section>
 <hr class="docutils" />
 <section id="load-combinations">
-<h2><strong>[2]  Load Combinations</strong><a class="headerlink" href="#load-combinations" title="Link to this heading">#</a></h2>
+<h2><strong>1.2</strong> Load Combinations<a class="headerlink" href="#load-combinations" title="Link to this heading">#</a></h2>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p><strong>Table 1</strong>: ASCE 7-05 Load Effects (saved as csv in _stored folder)</p>
+<p><strong>Table 1</strong>: ASCE 7-05 Load Effects (t001-1.csv)</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Equation No.</p></th>
@@ -312,7 +311,7 @@ folder.</p>
 </section>
 <hr class="docutils" />
 <section id="loads-and-geometry">
-<h2><strong>[3]  Loads and Geometry</strong><a class="headerlink" href="#loads-and-geometry" title="Link to this heading">#</a></h2>
+<h2><strong>1.3</strong> Loads and Geometry<a class="headerlink" href="#loads-and-geometry" title="Link to this heading">#</a></h2>
 <p>Successive value definitions are formatted as a table. Variable
 values are defined with the define operator. The line tag [T] labels and
 numbers the table.</p>
@@ -380,7 +379,7 @@ starting and ending line to be read from the file (0:0 means all lines).</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p><strong>Table 3</strong>: Beam Geometry from file: <strong>src/beam1.csv</strong></p>
+<p><strong>Table 3</strong>: Beam Geometry (src/beam1.csv)</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>variable</p></th>
@@ -419,12 +418,12 @@ starting and ending line to be read from the file (0:0 means all lines).</p>
 
 dl₁ = 3.64 klf     [dl₁] = 53.09 kN_m   | Dead load [ASCE7-05 2.3.2]
 
-D₄                  D₂          D₃             spc₁          D₁
-——————————————————  ——————————  —————————————  ————————————  —————————
-3.00 klf            2.10 psf    10.00 psf      2.00 ft       3.80 psf
-—————               —————       —————          —————         —————
-fixed machinery DL  plywood DL  partitions DL  beam spacing  joists DL
-——————————————————  ——————————  —————————————  ————————————  —————————
+D₃             D₂          spc₁          D₁         D₄
+—————————————  ——————————  ————————————  —————————  ——————————————————
+10.00 psf      2.10 psf    2.00 ft       3.80 psf   3.00 klf
+—————          —————       —————         —————      —————
+partitions DL  plywood DL  beam spacing  joists DL  fixed machinery DL
+—————————————  ——————————  ————————————  —————————  ——————————————————
 </pre></div>
 </div>
 <div class="line-block">
@@ -451,22 +450,22 @@ beam spacing  ASCE7-O5 LL
 
 ω₁ = 3.77 klf     [ω₁] = 54.96 kN_m   | Total load [ASCE7-05 2.3.2]
 
-dl₁                         ll₁
+ll₁                         dl₁
 ——————————————————————————  ——————————————————————————
-3.64 klf                    128.00 ft·psf
+128.00 ft·psf               3.64 klf
 —————                       —————
-Dead load [ASCE7-05 2.3.2]  Live load [ASCE7-05 2.3.2]
+Live load [ASCE7-05 2.3.2]  Dead load [ASCE7-05 2.3.2]
 ——————————————————————————  ——————————————————————————
 </pre></div>
 </div>
 </section>
 <hr class="docutils" />
 <section id="beam-response">
-<h2><strong>[4]  Beam Response</strong><a class="headerlink" href="#beam-response" title="Link to this heading">#</a></h2>
+<h2><strong>1.4</strong> Beam Response<a class="headerlink" href="#beam-response" title="Link to this heading">#</a></h2>
 <p>The following lines import the beam geometry from an external file,
 calculate section properties from imported functions and calculate
 the maximum moment, bending stress and mid-span deflection.</p>
-<p><strong>Table 4</strong>: Beam functions from file: <strong>src/sectprop.py</strong></p>
+<p><strong>Table 4</strong>: Beam functions (src/sectprop.py)</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Function</p></th>
@@ -582,12 +581,12 @@ fb₁ = ────────
 
 fb₁ = 2678.2 lb_in2     [fb₁] = 18.5 MPA   | Bending stress
 
-section₁                     m₁
-———————————————————————————  ———————————————————
-540.0 inch3                  120.5 ft2·klf
-—————                        —————
-rectangle - S (sectprop.py)  Mid-span UDL moment
-———————————————————————————  ———————————————————
+m₁                   section₁
+———————————————————  ———————————————————————————
+120.5 ft2·klf        540.0 inch3
+—————                —————
+Mid-span UDL moment  rectangle - S (sectprop.py)
+———————————————————  ———————————————————————————
 </pre></div>
 </div>
 <div class="line-block">
@@ -610,12 +609,12 @@ rectangle - S (sectprop.py)  Mid-span UDL moment
 
 δ₁ = 0.04 inch     [δ₁] = 1.00 mm   | mid-span deflection (sectprop.py)
 
-inertia₁                     ω₁                           spn₁       E₁
-———————————————————————————  ———————————————————————————  —————————  —————————————————————
-4860.00 inch4                3.77 klf                     16.00 ft   29000.00 ksi
-—————                        —————                        —————      —————
-rectangle - I (sectprop.py)  Total load [ASCE7-05 2.3.2]  beam span  modulus of elasticity
-———————————————————————————  ———————————————————————————  —————————  —————————————————————
+E₁                     ω₁                           inertia₁                     spn₁
+—————————————————————  ———————————————————————————  ———————————————————————————  —————————
+29000.00 ksi           3.77 klf                     4860.00 inch4                16.00 ft
+—————                  —————                        —————                        —————
+modulus of elasticity  Total load [ASCE7-05 2.3.2]  rectangle - I (sectprop.py)  beam span
+—————————————————————  ———————————————————————————  ———————————————————————————  —————————
 </pre></div>
 </div>
 </section>
@@ -650,10 +649,10 @@ rectangle - I (sectprop.py)  Total load [ASCE7-05 2.3.2]  beam span  modulus of 
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary"><strong>[1]  Summary</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-combinations"><strong>[2]  Load Combinations</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loads-and-geometry"><strong>[3]  Loads and Geometry</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beam-response"><strong>[4]  Beam Response</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary"><strong>1.1</strong> Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-combinations"><strong>1.2</strong> Load Combinations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loads-and-geometry"><strong>1.3</strong> Loads and Geometry</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beam-response"><strong>1.4</strong> Beam Response</a></li>
 </ul>
   </nav></div>
 
@@ -708,7 +707,7 @@ rectangle - I (sectprop.py)  Total load [ASCE7-05 2.3.2]  beam span  modulus of 
 <!-- _templates/rv-date.html -->
 <div class="footer-item">
     <p class="rvdate">
-        2026-05-15
+        2026-05-18
     </p>
 </div></div>
       
