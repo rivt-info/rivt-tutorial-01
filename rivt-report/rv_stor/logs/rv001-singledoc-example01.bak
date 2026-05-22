@@ -2,15 +2,16 @@
 # %% import
 import rivtlib.rvapi as rv
 
-# The following settings are only needed if defaults are changed:
-# (a leading hash and trailing semicolon are required)
-# rv setwidth = 80  ; set width of text output (default 80 characters)
+# The following settings are only needed if defaults need to be changed. A
+# leading hash and trailing semicolon are required. The set_width parameter
+# is evaluated at the beginning of the file. The remaining parameters are
+# evaluated with the PUBLISH command. Default values are provided.
 #
-# The following settings run with the Doc API and rivt-report.py script:
-# rv setprivate = true ; if false, default heading changed to public (default true)
-# rv notag = true ; if false API, tag is added to section number (default true)
-# rv keepfiles = true ; if false, remove files in the folders with leading "_" (default true)
-# rv updateconfig = true ; if false, do not update the config files (default true)
+# rv set_width = 80  ; character width of text output
+# rv private_heading = true ; if false, default heading changed to public
+# rv no_tag = true ; if false API, tag is added to section number
+# rv keep_files = true ; if false, remove files in folders with leading "_"
+# rv auto_cfg = true ; if false, do not update the config files
 
 # %% rv.I("""Summary
 rv.I("""Summary  
@@ -153,6 +154,6 @@ rv.D("""Publish Doc
     _[[END]]
     
 
-    | PUBLISH | Example 1 - rivt Doc | pdf
+    | PUBLISH | Example 1 - rivt Doc | html
 
     """)
