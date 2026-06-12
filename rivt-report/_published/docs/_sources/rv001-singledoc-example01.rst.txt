@@ -1,4 +1,4 @@
-**| D.0 |** Example 1 - rivt Doc
+**Example 1 - rivt Doc**
 ================================================================================
 
 
@@ -132,12 +132,12 @@ spn_1       16.00 ft  4.88 m     beam span
 
            dl₁ = 3.64 klf     [dl₁] = 53.09 kN_m   | Dead load [ASCE7-05 2.3.2]
 
-           D₄                  D₁         D₂          D₃             spc₁
-           ——————————————————  —————————  ——————————  —————————————  ————————————
-           3.00 klf            3.80 psf   2.10 psf    10.00 psf      2.00 ft
-           —————               —————      —————       —————          —————
-           fixed machinery DL  joists DL  plywood DL  partitions DL  beam spacing
-           ——————————————————  —————————  ——————————  —————————————  ————————————
+           D₁         D₃             D₄                  spc₁          D₂
+           —————————  —————————————  ——————————————————  ————————————  ——————————
+           3.80 psf   10.00 psf      3.00 klf            2.00 ft       2.10 psf
+           —————      —————          —————               —————         —————
+           joists DL  partitions DL  fixed machinery DL  beam spacing  plywood DL
+           —————————  —————————————  ——————————————————  ————————————  ——————————
 
 
  
@@ -336,12 +336,12 @@ midspan_delta(ln, w, e, i)  mid-span deflection of simply supported beam
 
            fb₁ = 2678.2 lb_in2     [fb₁] = 18.5 MPA   | Bending stress
 
-           m₁                   section₁
-           ———————————————————  ———————————————————————————
-           120.5 ft2·klf        540.0 inch3
-           —————                —————
-           Mid-span UDL moment  rectangle - S (sectprop.py)
-           ———————————————————  ———————————————————————————
+           section₁                     m₁
+           ———————————————————————————  ———————————————————
+           540.0 inch3                  120.5 ft2·klf
+           —————                        —————
+           rectangle - S (sectprop.py)  Mid-span UDL moment
+           ———————————————————————————  ———————————————————
 
 
  
@@ -374,12 +374,12 @@ midspan_delta(ln, w, e, i)  mid-span deflection of simply supported beam
 
            δ₁ = 0.04 inch     [δ₁] = 1.00 mm   | mid-span deflection (sectprop.py)
 
-           spn₁       inertia₁                     ω₁                           E₁
-           —————————  ———————————————————————————  ———————————————————————————  —————————————————————
-           16.00 ft   4860.00 inch4                3.77 klf                     29000.00 ksi
-           —————      —————                        —————                        —————
-           beam span  rectangle - I (sectprop.py)  Total load [ASCE7-05 2.3.2]  modulus of elasticity
-           —————————  ———————————————————————————  ———————————————————————————  —————————————————————
+           spn₁       inertia₁                     E₁                     ω₁
+           —————————  ———————————————————————————  —————————————————————  ———————————————————————————
+           16.00 ft   4860.00 inch4                29000.00 ksi           3.77 klf
+           —————      —————                        —————                  —————
+           beam span  rectangle - I (sectprop.py)  modulus of elasticity  Total load [ASCE7-05 2.3.2]
+           —————————  ———————————————————————————  —————————————————————  ———————————————————————————
 
 
  
