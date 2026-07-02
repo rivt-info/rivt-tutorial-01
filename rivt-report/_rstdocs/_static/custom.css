@@ -151,3 +151,9 @@ hr {
 .admonition .admonition-title {
     border: none !important;
 }
+
+/* Targets standard Sphinx internal cross-references */
+a.internal.reference,
+a.std-ref {
+    font-weight: bold;
+}

@@ -74,10 +74,10 @@ favicons = [
 # More than one author : \r'Guido van Rossum\Fred L. Drake, Jr., editor'
 pdf_documents = [("rv001-doc-example01", "rv001-doc-example01", "Example 1 - rivt Doc", 
             "R Holland")]
-# A list of folders to search for stylesheets.
-pdf_style_path = ["_rstdocs"]
 # A colon-separated list of folders to search for fonts.
-pdf_font_path = ['/_static/fonts/',"_rstdocs/_static/fonts" ]
+pdf_font_path = ["_rstdocs/_static/fonts","../_rstdocs/_static/fonts/" ]
+# A list of folders to search for stylesheets.
+pdf_style_path = ["_rstdocs","../_rstdocs"]
 # A comma-separated list of custom stylesheets.
 pdf_stylesheets = ["rivtstyle.yaml"]
 # If false, no coverpage is generated.
@@ -103,7 +103,7 @@ pdf_break_level = 0
 # When a section starts in a new page, force it to be 'even', 'odd', 'any
 pdf_breakside = "any"
 # Insert footnotes where they are defined 
-pdf_inline_footnotes = False
+pdf_inline_footnotes = True
 # If false, no index is generated.
 pdf_use_index = False
 # If false, no modindex is generated.

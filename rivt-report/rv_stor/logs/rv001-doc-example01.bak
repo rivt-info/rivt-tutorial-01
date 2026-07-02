@@ -111,7 +111,7 @@ rv.V("""Beam Response
     """)
 
 rv.R("""doc notes | endnotes
-    "Euler–Bernoulli beam theory," Wikipedia, Wikimedia Foundation. [Online].
+    "Euler–Bernoulli beam theory", Wikipedia, Wikimedia Foundation. [Online].
     https://en.wikipedia.org/wiki/Euler_Bernoulli_beam_theory. 
     [Accessed: Jun. 15, 2026].
 
@@ -130,7 +130,7 @@ rv.D("""Publish Doc
     _rivt-public folders as a README.txt file. READMEs are formatted and
     displayed on the first page of a GitHub repo.
     
-    | PUBLISH | Example 1 - rivt Doc | txt
+    | PUBLISH | Example 1 - rivt Doc | pdf
     
     _[[METADATA]] 
     [doc]
@@ -157,6 +157,9 @@ rv.D("""Publish Doc
     pdf_pagesize = letter
     pdf_margins = 1in, 1in, 1in, 1in 
     pdf_link_underline = false
+    ; red, blue, green, yellow, black, cyan, magenta, gray, brown
+    ; lightblue, magenta, lime, maroon, gray, olive
+    pdf_link_color = brown
     ; table of contents levels: 1 - includes subdivisions, 2 - includes sections
     toc_level = 2
 

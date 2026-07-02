@@ -17,6 +17,7 @@
             ]
         }
     ],
+    "workbench.editor.tabSizing": "shrink",
     "notebook.outline.showCodeCells": true,
     "notebook.outline.showCodeCellSymbols": false,
     "notebook.markup.fontSize": 13,
