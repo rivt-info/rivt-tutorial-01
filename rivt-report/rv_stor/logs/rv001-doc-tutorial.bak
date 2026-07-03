@@ -1,9 +1,19 @@
 #! python3
+""" This tutorial steps through the process of writing a rivt file and creating
+a doc. A second tutorial demonstrates how to create a rivt report with multiple
+docs. 
+
+To review the full tutorial list click on the folded page icon beneath the
+search icon (magnifying glass) in the left sidebar. Each step explains an
+aspect of a rivt file and identifies a few options for modifying it. Each step
+can be opened by clicking the item in the list or on the small comment icon 
+adjacent to a line number.
+    
+    
+"""
 
 import rivtlib.rvapi as rv
 
-# The following settings change defaults (shown n parenthesis) for each doc.
-# A leading hash (#) and trailing semicolon (;) are required.
 # rv set_width = 80  ; character width of text output (80)
 # rv no_tag = true ; if false, the API type is added to section number (true)
 # rv private = true ; if false, default section heading changed to public (private)
