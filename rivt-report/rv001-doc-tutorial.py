@@ -8,7 +8,7 @@ search icon (magnifying glass) in the left sidebar. Each step explains an
 aspect of a rivt file and identifies a few options for modifying it. Each step
 can be opened by clicking the item in the list or on the small comment icon
 adjacent to a line number. The comment icon toggles the step open and closed.
-    
+        
 """
 
 import rivtlib.rvapi as rv

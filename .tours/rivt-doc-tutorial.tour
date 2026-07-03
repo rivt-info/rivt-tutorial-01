@@ -11,14 +11,14 @@
     {
       "file": "rivt-report/rv001-doc-tutorial.py",
       "description": "The following settings change defaults (shown n parenthesis) for each doc.\r\nA leading hash (#) and trailing semicolon (;) are required.",
-      "line": 17,
+      "line": 14,
       "icon": "change default settings",
       "title": "change default settings"
     },
     {
       "file": "rivt-report/rv001-doc-tutorial.py",
       "description": "api 1",
-      "line": 22
+      "line": 17
     },
     {
       "file": "rivt-report/rv001-doc-tutorial.py",
