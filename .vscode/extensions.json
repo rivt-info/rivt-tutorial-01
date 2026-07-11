@@ -1,7 +1,5 @@
 {
     "recommendations": [
-        "howardzuo.vscode-favorites",
-        "haugerbr.project-tasks",
         "076923.python-image-preview",
         "alefragnani.project-manager",
         "donjayamanne.githistory",
@@ -12,7 +10,11 @@
         "github.vscode-github-actions",
         "github.vscode-pull-request-github",
         "grapecity.gc-excelviewer",
+        "haugerbr.project-tasks",
         "henryclayton.context-menu-toggle-comments",
+        "hoangkimlai.ipython",
+        "hoovercj.vscode-settings-cycler",
+        "howardzuo.vscode-favorites",
         "huuums.vscode-fast-folder-structure",
         "janbn.git-last-commit-message",
         "janisdd.vscode-edit-csv",
@@ -20,6 +22,7 @@
         "jkearins.action-buttons-ext",
         "jsynowiec.vscode-insertdatestring",
         "kisstkondoros.vscode-gutter-preview",
+        "mathematic.vscode-pdf",
         "ms-python.debugpy",
         "ms-python.python",
         "ms-python.vscode-pylance",
@@ -35,12 +38,15 @@
         "phplasma.csv-to-table",
         "qwtel.sqlite-viewer",
         "randomfractalsinc.vscode-data-preview",
+        "sandcastle.vscode-open",
+        "shd101wyy.markdown-preview-enhanced",
         "streetsidesoftware.code-spell-checker",
         "tht13.rst-vscode",
         "tombonnike.vscode-status-bar-format-toggle",
-        "tomoki1207.pdf",
-        "vscode-infra.image-viewer",
         "troelsdamgaard.reflow-paragraph",
-        "anthropic.claude-code"
+        "vscode-infra.image-viewer",
+        "vsls-contrib.codetour",
+        "wayou.vscode-todo-highlight",
+        "zjffun.snippetsmanager",
     ]
 }
