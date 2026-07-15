@@ -32,7 +32,7 @@ import rivtlib.rvapi as rv
 # rv private = true ; if false, default section heading changed to public (private)
 
 # %% rv.I("""Summary and Loads
-rv.I("""Summary and Loads
+rv.I(r"""Summary and Loads
 
     This rivt file example calculates the maximum stress and deflection in a
     simply supported, uniformly loaded beam using E-B theory _[#]. It also
@@ -49,7 +49,7 @@ rv.I("""Summary and Loads
 """)
 
 # %% rv.I("""Load Combinations 
-rv.I("""Load Combinations 
+rv.I(r"""Load Combinations 
 
     ## Indented comments with double hashes will not appear in the doc
       
@@ -65,9 +65,9 @@ rv.I("""Load Combinations
     ============= ================================================
     _[[END]]
 """)
-rv.X()
+
 # %% rv.V("""Loads and Geometry
-rv.V("""Loads and Geometry 
+rv.V(r"""Loads and Geometry 
     
     Successive value definitions are formatted as a table. Variable values are
     defined with the define operator. The line tag [T] labels and numbers the
@@ -88,7 +88,7 @@ rv.V("""Loads and Geometry
     folder. The description is the table title, followed by the max
     column width. 
 
-    | VALTABLE | rvsrc/data/beam1.csv | Beam Geometry, 40
+    | VALTABLE | rvsrc/vals/beam1.csv | Beam Geometry, 40
 
     | IMAGE | rvsrc/img/beam1.png | Beam Diagram, 60, num, not
 
@@ -101,7 +101,7 @@ rv.V("""Loads and Geometry
     """)
 
 # %% rv.V("""Beam Stress
-rv.V("""Beam Response
+rv.V(r"""Beam Response
 
     The following lines import the beam geometry from an external file, 
     calculate section properties from imported functions and calculate 
@@ -130,7 +130,7 @@ rv.V("""Beam Response
     """)
 
 # %% rv.R("""doc notes | endnotes
-rv.R("""doc notes | endnotes
+rv.T(r"""doc notes | endnotes
     "Euler–Bernoulli beam theory", Wikipedia, Wikimedia Foundation. [Online].
     https://en.wikipedia.org/wiki/Euler_Bernoulli_beam_theory. 
     [Accessed: Jun. 15, 2026].
@@ -140,7 +140,7 @@ rv.R("""doc notes | endnotes
     """)
 
 # %% rv.D("""Publish Doc 
-rv.D("""Publish Doc 
+rv.D(r"""Publish Doc 
     
     A rivt file may be published as a text, PDF or HTML doc by specifying the
     PUBLISH type parameter as txt, pdf or html. 
